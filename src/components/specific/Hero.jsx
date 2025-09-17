@@ -38,7 +38,7 @@ const Hero = () => {
           />
           <button
             type="submit"
-            className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-r-md hover:bg-indigo-700 transition-colors"
+            className="px-6 py-3 bg-green-600 text-white font-semibold rounded-r-md hover:bg-green-700 transition-colors"
           >
             {t('searchButton')}
           </button>

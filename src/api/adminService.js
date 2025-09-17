@@ -22,8 +22,33 @@ export const getAdminAllTestimonials = async () => {
 };
 export const updateInquiryStatus = async (inquiryId, status) => {
   try {
-    // Corrected URL, removing the '/admin' part
     const response = await api.patch(`/inquiries/${inquiryId}`, { status });
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};
+
+export const updateTestimonialStatus = async (testimonialId, status) => {
+  try {
+    const response = await api.patch(`/testimonials/${testimonialId}`, { status });
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};
+export const getAdminAllAppointments = async () => {
+  try {
+    const response = await api.get('/appointments/all');
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};
+
+export const updateAppointment = async (appointmentId, updateData) => {
+  try {
+    const response = await api.patch(`/appointments/${appointmentId}`, updateData);
     return response.data;
   } catch (error) {
     throw error.response.data;

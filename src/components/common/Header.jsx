@@ -17,12 +17,12 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-indigo-600">
+        <Link to="/" className="text-2xl font-bold text-green-600">
           Real Estate
         </Link>
         <nav className="flex items-center space-x-4">
           <LanguageSwitcher />
-          <Link to="/properties" className="text-gray-600 hover:text-indigo-600">
+          <Link to="/properties" className="text-gray-600 hover:text-green-600">
             {t('propertiesLink')}
           </Link>
 
@@ -30,7 +30,7 @@ const Header = () => {
             // If user is logged in
             <>
               {/* 2. Update the Link to include the icon */}
-              <Link to="/dashboard/profile" className="flex items-center text-gray-600 hover:text-indigo-600 font-semibold">
+              <Link to="/dashboard/profile" className="flex items-center text-gray-600 hover:text-green-600 font-semibold">
                 <UserCircleIcon className="h-6 w-6 mr-1" />
                 {t('myProfileLink')}
               </Link>
@@ -45,10 +45,10 @@ const Header = () => {
           ) : (
             // If user is not logged in
             <>
-              <Link to="/login" className="px-4 py-2 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
+              <Link to="/login" className="px-4 py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700">
                 {t('loginButton')}
               </Link>
-              <Link to="/register" className="text-gray-600 hover:text-indigo-600">
+              <Link to="/register" className="text-gray-600 hover:text-green-600">
                 {t('signUpLink')}
               </Link>
             </>

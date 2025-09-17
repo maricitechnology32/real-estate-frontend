@@ -44,7 +44,7 @@ const ManagePropertiesPage = () => {
     <div>
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-2xl font-bold">{t('manageProperties')}</h1>
-        <Link to="/admin/properties/create" className="px-4 py-2 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
+        <Link to="/admin/properties/create" className="px-4 py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700">
           {t('addNewProperty')}
         </Link>
       </div>
@@ -68,7 +68,7 @@ const ManagePropertiesPage = () => {
                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">{prop.status}</td>
                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">{prop.price}</td>
                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                  <Link to={`/admin/properties/edit/${prop._id}`} className="text-indigo-600 hover:text-indigo-900 mr-4">{t('edit')}</Link>
+                  <Link to={`/admin/properties/edit/${prop._id}`} className="text-green-600 hover:text-green-900 mr-4">{t('edit')}</Link>
                   <button onClick={() => handleDelete(prop._id)} className="text-red-600 hover:text-red-900">{t('delete')}</button>
                 </td>
               </tr>

@@ -24,7 +24,7 @@ const PropertyCard = ({ property, onRemove }) => {
           <h3 className="text-lg font-semibold text-gray-800 truncate">{property.title?.[i18n.language] || property.title}</h3>
           <p className="text-gray-600 mt-1">{property.locationAddress?.[i18n.language] || property.locationAddress}</p>
           <div className="mt-4 flex-grow flex justify-between items-end">
-            <p className="text-xl font-bold text-indigo-600">{formattedPrice}</p>
+            <p className="text-xl font-bold text-green-600">{formattedPrice}</p>
             <span className="px-3 py-1 text-sm font-semibold text-white bg-green-500 rounded-full">
               {property.propertyType}
             </span>

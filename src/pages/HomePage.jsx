@@ -1,10 +1,11 @@
 import Hero from '../components/specific/Hero';
+import TestimonialsSection from '../components/specific/TestimonialsSection';
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
-      {/* We will add other sections like "Featured Properties" here later */}
+      <TestimonialsSection/>
     </div>
   );
 };

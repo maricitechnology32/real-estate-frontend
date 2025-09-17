@@ -58,7 +58,7 @@ const PropertyFilters = ({ onFilterChange }) => {
       <div className="flex space-x-2 md:col-start-5">
         <button
           onClick={handleApplyFilters}
-          className="w-full px-4 py-2 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700"
+          className="w-full px-4 py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700"
         >
           {t('applyFilters')}
         </button>

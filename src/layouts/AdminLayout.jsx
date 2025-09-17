@@ -19,6 +19,10 @@ const AdminLayout = () => {
             <NavLink to="/admin/dashboard" end style={({ isActive }) => isActive ? activeLinkStyles : undefined} className={linkStyles}>{t('adminDashboard')}</NavLink>
             <NavLink to="/admin/properties" style={({ isActive }) => isActive ? activeLinkStyles : undefined} className={linkStyles}>{t('manageProperties')}</NavLink>
             <NavLink to="/admin/inquiries" style={({ isActive }) => isActive ? activeLinkStyles : undefined} className={linkStyles}>{t('manageInquiries')}</NavLink>
+            <NavLink to="/admin/testimonials" style={({ isActive }) => isActive ? activeLinkStyles : undefined} className={linkStyles}>{t('manageTestimonials')}</NavLink>
+            <NavLink to="/admin/appointments" style={({ isActive }) => isActive ? activeLinkStyles : undefined} className={linkStyles}>{t('manageAppointments')}</NavLink>
+
+
           </nav>
         </aside>
         <main className="w-3/4">

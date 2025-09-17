@@ -49,7 +49,7 @@ const InquiryForm = ({ propertyId }) => {
         {status.error && <p className="text-sm text-red-600">{status.error}</p>}
         {status.success && <p className="text-sm text-green-600">{status.success}</p>}
 
-        <button type="submit" className="w-full px-4 py-2 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
+        <button type="submit" className="w-full px-4 py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700">
           {t('sendMessage')}
         </button>
       </form>

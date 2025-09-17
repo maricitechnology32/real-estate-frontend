@@ -47,3 +47,12 @@ export const createProperty = async (formData) => {
     throw error.response.data;
   }
 };
+
+export const updateProperty = async (id, formData) => {
+  try {
+     const response = await api.patch(`/properties/${id}`, formData);
+    return response.data;
+  } catch (error) {
+    throw error.response.data;
+  }
+};

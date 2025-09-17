@@ -7,7 +7,7 @@ import { useAuth } from '../hooks/useAuth';
 import { toggleWishlistItem } from '../api/wishlistService';
 import PropertyCard from '../components/specific/PropertyCard';
 import InquiryForm from '../components/specific/InquiryForm';
-
+import AppointmentForm from '../components/specific/AppointmentForm';  
 const PropertyDetailPage = () => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
@@ -102,7 +102,7 @@ const PropertyDetailPage = () => {
                       src={image.url}
                       alt={`Thumbnail ${index + 1}`}
                       onClick={() => setFeaturedImage(image.url)}
-                      className={`h-20 w-20 object-cover rounded-md cursor-pointer border-2 ${featuredImage === image.url ? 'border-indigo-500' : 'border-transparent hover:border-indigo-300'}`}
+                      className={`h-20 w-20 object-cover rounded-md cursor-pointer border-2 ${featuredImage === image.url ? 'border-green-500' : 'border-transparent hover:border-green-300'}`}
                     />
                   ))}
                 </div>
@@ -121,7 +121,7 @@ const PropertyDetailPage = () => {
                   </button>
                 )}
               </div>
-              <p className="text-4xl font-extrabold text-indigo-600 my-4">{formattedPrice}</p>
+              <p className="text-4xl font-extrabold text-green-600 my-4">{formattedPrice}</p>
 
               <h2 className="text-2xl font-semibold mt-6 border-b pb-2">{t('keyDetails')}</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-center">
@@ -148,6 +148,8 @@ const PropertyDetailPage = () => {
         {/* Sidebar (Right Column) */}
         <div className="lg:col-span-1">
           <InquiryForm propertyId={id} />
+          <AppointmentForm propertyId={id} /> 
+
         </div>
       </div>
 

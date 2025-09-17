@@ -29,6 +29,11 @@ import ManagePropertiesPage from './pages/admin/ManagePropertiesPage';
 import AdminLayout from './layouts/AdminLayout';
 import ManageInquiriesPage from './pages/admin/ManageInquiriesPage';
 import CreatePropertyPage from './pages/admin/CreatePropertyPage';
+import EditPropertyPage from './pages/admin/EditPropertyPage';
+import SubmitTestimonialPage from './pages/dashboard/SubmitTestimonialPage';
+import ManageTestimonialsPage from './pages/admin/ManageTestimonialsPage';
+import ManageAppointmentsPage from './pages/admin/ManageAppointmentsPage';
+import MyAppointmentsPage from './pages/dashboard/MyAppointmentsPage';
 
 function App() {
   return (
@@ -51,6 +56,10 @@ function App() {
           <Route path="inquiries" element={<MyInquiriesPage />} />
           <Route path="wishlist" element={<MyWishlistPage />} />
           <Route path="profile" element={<MyProfilePage />} />
+          <Route path="submit-testimonial" element={<SubmitTestimonialPage />} />
+          <Route path="appointments" element={<MyAppointmentsPage />} />
+
+
         </Route>
       </Route>
 
@@ -59,11 +68,14 @@ function App() {
         <Route element={<AdminLayout />}> {/* Use the new AdminLayout */}
           <Route path="dashboard" element={<AdminDashboardPage />} />
           <Route path="properties" element={<ManagePropertiesPage />} />
-          <Route path="inquiries" element={<ManageInquiriesPage />} /> 
-          <Route path="properties/create" element={<CreatePropertyPage />} /> 
+          <Route path="inquiries" element={<ManageInquiriesPage />} />
+          <Route path="properties/create" element={<CreatePropertyPage />} />
+          <Route path="properties/edit/:id" element={<EditPropertyPage />} />
+          <Route path="testimonials" element={<ManageTestimonialsPage />} />
+          <Route path="appointments" element={<ManageAppointmentsPage />} />
 
 
-          {/* We will create the admin inquiries page next */}
+
         </Route>
       </Route>
 

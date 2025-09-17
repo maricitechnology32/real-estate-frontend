@@ -186,7 +186,7 @@ const CreatePropertyPage = () => {
 
         {error && <p className="text-sm text-red-600">{error}</p>}
 
-        <button type="submit" disabled={isSubmitting} className="w-full px-4 py-3 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700 disabled:bg-gray-400">
+        <button type="submit" disabled={isSubmitting} className="w-full px-4 py-3 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700 disabled:bg-gray-400">
           {isSubmitting ? 'Creating...' : t('createPropertyButton')}
         </button>
       </form>

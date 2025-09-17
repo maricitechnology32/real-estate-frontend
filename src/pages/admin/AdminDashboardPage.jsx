@@ -39,14 +39,14 @@ const AdminDashboardPage = () => {
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-lg font-semibold text-gray-600">Total Properties</h2>
           <p className="text-4xl font-bold mt-2">{stats.properties}</p>
-          <Link to="/admin/properties" className="text-indigo-600 hover:underline mt-4 inline-block">Manage Properties</Link>
+          <Link to="/admin/properties" className="text-green-600 hover:underline mt-4 inline-block">Manage Properties</Link>
         </div>
 
         {/* Stat Card for Inquiries */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-lg font-semibold text-gray-600">Total Inquiries</h2>
           <p className="text-4xl font-bold mt-2">{stats.submittedInquiries}</p>
-          <Link to="/admin/inquiries" className="text-indigo-600 hover:underline mt-4 inline-block">Manage Inquiries</Link>
+          <Link to="/admin/inquiries" className="text-green-600 hover:underline mt-4 inline-block">Manage Inquiries</Link>
         </div>
 
         {/* Add more stat cards here later (e.g., for testimonials) */}

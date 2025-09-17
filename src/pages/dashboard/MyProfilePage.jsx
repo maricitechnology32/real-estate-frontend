@@ -94,7 +94,7 @@ const MyProfilePage = () => {
         <form onSubmit={handleAvatarSubmit} className="flex items-center space-x-4">
           <img src={user.avatar?.url || `https://ui-avatars.com/api/?name=${user.fullName}&background=random`} alt="Avatar" className="w-20 h-20 rounded-full object-cover" />
           <input type="file" onChange={handleAvatarChange} className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100" />
-          <button type="submit" disabled={!avatarFile} className="px-4 py-2 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700 disabled:bg-gray-400">Update</button>
+          <button type="submit" disabled={!avatarFile} className="px-4 py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700 disabled:bg-gray-400">Update</button>
         </form>
         {avatarMessage && <p className="text-sm mt-2 text-green-600">{avatarMessage}</p>}
       </div>
@@ -119,7 +119,7 @@ const MyProfilePage = () => {
           <textarea name="bio" value={formData.bio} onChange={handleProfileChange} rows="3" className="w-full px-3 py-2 mt-1 border rounded-md"></textarea>
         </div>
         {profileMessage && <p className="text-sm text-green-600">{profileMessage}</p>}
-        <button type="submit" className="px-4 py-2 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700">{t('saveChanges')}</button>
+        <button type="submit" className="px-4 py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700">{t('saveChanges')}</button>
       </form>
 
       {/* Change Password Form */}
@@ -134,7 +134,7 @@ const MyProfilePage = () => {
           <input type="password" name="newPassword" value={passwordData.newPassword} onChange={handlePasswordChange} className="w-full px-3 py-2 mt-1 border rounded-md" />
         </div>
         {passwordMessage && <p className="text-sm text-green-600">{passwordMessage}</p>}
-        <button type="submit" className="px-4 py-2 font-semibold text-white bg-indigo-600 rounded-md hover:bg-indigo-700">{t('changePassword')}</button>
+        <button type="submit" className="px-4 py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700">{t('changePassword')}</button>
       </form>
     </div>
   );
